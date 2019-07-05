@@ -1,0 +1,129 @@
+Divide and Conquer (分治法）
+
+1. divide the problem into a number of subproblems that are
+smaller instances of the same problem 
+
+2. 
+
+3. 
+
+4. 
+
+
+Recursion
+
+1. function calls iteself
+
+2. boil down problem into smaller ones
+ 
+3. 
+
+4. 
+
+
+Merge Sort
+
+1. 
+
+2. 
+
+3. 
+ 
+4. 
+
+Quick Sort
+
+1. Process
+
+Example:
+
+[7,3,8,4,5,6,2]
+
+divide
+
+[7,3,8] --> [3,7,8]  (i)	 step 1
+
+[4,5,6,2] --> [2,4,5,6] (j)  step 2
+
+merge the two of them --> merge sort
+
+i compare to j
+
+i1 --> j1, j2, j3, j4
+
+
+Big O Analysis
+
+divide ---> 	O(1)
+mergeSort ---> 	
+
+divide doesn't have time complexity --> O(1)
+
+如何算出mergesort的时间复杂度
+1. 算一共有多少层 logn (h = logn)
+2. 算每一层的运算时间
+
+recursion space：
+recursion本身空间消耗加上额外的其他空间消耗
+merge需要额为空间。但每次merge完可以释放之前的空间。最大需要O（n） --》 为啥
+recursion本身空间： Recursion层数 O（logn）
+
+释放 --》 投胎以后内容不记得，记得层数
+
+
+Quick Sort （快速排序)
+
+快速排序分治法的另外一个应用例子
+pivot选哪里都好 --》 选的好就快
+
+比pivot小的放左边，打的放右边
+
+
+
+
+Quick Sort Big O Analysis (Run Time/Space)
+
+4 3 2 1  O(n-2)
+  /  \ 
+ 3 2 1   O(n-3)
+  /   \
+ 2 1     O(n-4)
+ / \ 
+1        ......1
+		 sum() = O(n^2)
+
+算quick sort的时间复杂度
+1. 算有几层			logn（h = logn)
+2. 算每一层时间复杂度	O（n）
+Total Time: 层数 * 每一层的时间复杂度 = O（nlogn) --》 average time
+
+玄学 --》 选pivot point --》 如果选不好的话O(n^2) 
+
+Recursion Space: Recursion本身空间消耗加上其他空间消耗
+merge需要
+
+quicksort如果balance好的话 --》 pivot point好的话比较快
+
+
+Time： 总的时间复杂度 = O（nlogn）
+Space： 总的时间复杂度 = O（n）
+
+
+2^h = n --> h = logn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
