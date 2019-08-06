@@ -1,0 +1,9 @@
+complexity summary
+
+Sorting Algorithm	Best Case	Average Case	Worst Case
+Selection sort	      O(N^2)	   O(N^2)	       O(N^2)
+Insertion sort	      O(N^2)	   O(N^2)	       O(N^2)
+Bubble sort	          O(N^2)	   O(N^2)	       O(N^2)
+Merge sort	          O(N.log2N)   O(N.log2N)	   O(N.log2N)
+Quick sort	          O(N.log2N)   O(N.log2N)	   O(N^2)
+Tree sort	          O(N.log2N)   O(N.log2N)	   O(N^2)

@@ -1,0 +1,24 @@
+def backtracking(answer, current_position, N, possible_decisions):
+    # answer: Tuple
+    # current_position:
+    # N:
+    # possible_decisions: A map that associates the id of a step to a 
+    # collection of possible decisions we can make for that step
+    if len(answer) == N:
+        # we have successfully build one answer here.
+
+    else:
+        for decision in possible_decisions[current_position]:
+            if is_compatible(answer, decision):
+                answer.add(decision)
+                backtracking(answer, current_position + 1, N, possible_decisions)
+                answer.remove(decision)
+
+
+Basic cake example for solving backtracking:
+# cake example for backtracking
+cakes = []
+for flour in [flour1, flour2, flour3]:
+    for cream in [cream1, cream2]:
+        for fruit in [fruit1, fruit2, fruit3, fruit4, fruit5, fruit6]:
+            cakes.append(make_cake(flour, cream, fruit))
